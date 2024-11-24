@@ -1,0 +1,118 @@
+.hora-disponivel {
+    width: 80%;
+    max-width: 1200px;
+    margin: 6rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: none;
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.hora-disponivel h2 {
+    color: var(--nav-color);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.time-slot {
+    flex: 0 1 300px;
+}
+
+.time-slot button {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--nav-color);
+    background: none;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.time-slot button:hover {
+    border-color: var(--nav-hover);
+    background-color: rgba(var(--nav-hover-rgb), 0.1);
+}
+
+.time-slot button.selected {
+    border-color: var(--nav-color);
+    color: var(--text-color);
+    background-color: var(--nav-hover);
+}
+
+
+
+.horario-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.hora {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.medico, .unidade {
+    font-size: 0.9rem;
+}
+
+.hora-button {
+    display: block;
+    margin: 2rem auto 0;
+    padding: 1rem 2rem;
+    background-color: var(--nav-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hora-button:hover {
+    background-color: var(--nav-hover);
+}
+
+.hora-button:disabled {
+    background-color: var(--nav-hover);
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .hora-disponivel {
+        width: 95%;
+        padding: 1rem;
+        margin: 4rem auto;
+    }
+
+    .time-slot {
+        flex: 0 1 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hora-disponivel h2 {
+        font-size: 1.4rem;
+    }
+
+    .hora {
+        font-size: 1rem;
+    }
+
+    .medico, .unidade {
+        font-size: 0.8rem;
+    }
+}

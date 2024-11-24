@@ -1,0 +1,161 @@
+/* Container principal do formulário */
+.form {
+    background: none;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 30%;
+    margin-left: 2rem;
+    margin-top: 23vh; /* Aumentado para mover mais para baixo */
+    box-shadow: none; /* Removido para tirar o fundo branco */
+}
+
+/* Grupos de campos do formulário */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo dos labels */
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--nav-hover);
+    font-family: "Poppins", sans-serif;
+}
+
+/* Estilo dos inputs e selects */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--nav-color);
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--nav-hover);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Título do formulário */
+.form-txt h1 {
+    color: var(--nav-hover);
+    margin-bottom: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+/* Botão de submit */
+.submit-button {
+    background-color: transparent;
+    color: var(--nav-hover);
+    border: 1px solid var(--nav-hover);
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.2s;
+    display: block;
+    margin: 1.5rem 0 0;
+    width: fit-content;
+}
+
+/* Hover do botão submit */
+.submit-button:hover {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+/* Seletor de data personalizado */
+.date-picker {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--nav-color);
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--nav-hover);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Adicione esta regra para o estado de foco */
+.form-group input:focus,
+.form-group select:focus,
+.date-picker:focus {
+    background-color: transparent;
+    outline: none;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para tablets */
+@media screen and (max-width: 768px) {
+    .form {
+        width: 70%;
+        padding: 1.5rem;
+        margin-left: 0;
+    }
+
+    .form-txt h1 {
+        font-size: 1.6rem;
+        text-align: left;
+    }
+
+    .form-group input,
+    .form-group select,
+    .date-picker {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .submit-button {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+/* Para celulares */
+@media screen and (max-width: 480px) {
+    .form {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .form-txt h1 {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 0.8rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .date-picker {
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+
+    .submit-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+/* Para MacBooks e telas maiores */
+
